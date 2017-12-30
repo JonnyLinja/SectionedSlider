@@ -411,19 +411,19 @@ open class Palette {
 open class SectionedSlider: UIView {
     
     // MARK: - IBDesignable and IBInspectable
-    @IBInspectable var viewBackgroundColor: UIColor? {
+    @IBInspectable open var viewBackgroundColor: UIColor? {
         didSet {
             palette.viewBackgroundColor = viewBackgroundColor ?? palette.viewBackgroundColor
         }
     }
     
-    @IBInspectable var sliderBackgroundColor: UIColor? {
+    @IBInspectable open var sliderBackgroundColor: UIColor? {
         didSet {
             palette.sliderBackgroundColor = sliderBackgroundColor ?? palette.sliderBackgroundColor
         }
     }
     
-    @IBInspectable var sliderColor: UIColor? {
+    @IBInspectable open var sliderColor: UIColor? {
         didSet {
             palette.sliderColor = sliderColor ?? palette.sliderColor
         }
